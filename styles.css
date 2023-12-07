@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow-x: hidden;
+  /* scroll-snap-type: x mandatory; */
+}
+
+.slider-inner {
+  height: 100%;
+  width: calc(500px * 5);
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  transition-duration: 0.5s;
+  /* pointer-events: none; */
+}
+
+.slide {
+  /* scroll-snap-align: start; */
+  height: 100%;
+  width: 500px;
+  border-radius: 40px;
+}
+
+.slide:nth-of-type(1) {
+  background-color: red;
+}
+.slide:nth-of-type(2) {
+  background-color: lightblue;
+}
+.slide:nth-of-type(3) {
+  background-color: forestgreen;
+}
+.slide:nth-of-type(4) {
+  background-color: purple;
+}
+.slide:nth-of-type(5) {
+  background-color: brown;
+}
